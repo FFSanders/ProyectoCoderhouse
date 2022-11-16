@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenedor{ 
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+/*----------HEADER----------*/
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 10px;
+    background-color: #4BFF38;
+}
+
+/*logo y titulo*/
+.logo{
+    display: flex;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.logo h2{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 2.7%;
+    left: 5.5%;
+}
+
+.logo h2:hover{
+        transform: scale(1.1);
+}
+
+/*menu del medio*/
+.header ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+.header li:hover{
+    transform: scale(1.1);
+}
+
+.header li a:hover{
+    color: #FAF78B;
+}
+
+.redes:hover{
+    transform: scale(1.1);
+}
+
+
+/*Boton de cumpleaños*/
+.cumpleaños{
+    color: black;
+    padding: 7px 18px;
+    border: none;
+    border-radius: 50px;
+    cursor:pointer
+    transition: all 0.3s ease 0s;
+    margin-top: 75px;
+    margin-left: -950px;
+}
+
+.cumpleaños:hover{
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+/*----------MAIN----------*/
+/*----------INICIO----------*/
+.main{
+    grid-area: main; 
+    padding: 20px;
+    background-image: url(../Images/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*Tarjeta de sobre nosotros*/
+.nosotros{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 58%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
+}
+
+.nosotros:hover{
+    transform: scale(1.1);
+}
+
+.nosotros img{
+    width: 450px;
+    border-radius: 30px;
+}
+
+.nosotros h1{
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.nosotros p{
+    position: absolute;
+    margin-top: 70px;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+/*tarjeta de nosotros*/
+.informacion{
+    background-color: white;
+    display: flex;
+    padding: 40px;
+    width: 58%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
+}
+
+.informacion:hover{
+    transform: scale(1.1);
+}
+
+.informacion img{
+    width: 450px;
+    border-radius: 30px;
+}
+
+.informacion h2{
+    font-size: 35px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.informacion ul{
+    margin: 20px;
+    margin-top: 15px;
+}
+
+.horarios{
+    position: absolute;
+}
+.precio{
+    position: relative;
+    margin-top: 200px;
+    margin-right: 300px;
+}
+
+/*----------MAIN----------*/
+/*----------TORNEO----------*/
+
+.torneo{
+    background-color: white;
+    display: flex;
+    padding: 40px;
+    width: 60%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
+}
+
+.info{
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    padding: 0px 10px;
+}
+
+.premios{
+    position: relative;
+    margin-top: 200px;
+    margin-right: 300px;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.boton{
+    position: absolute;
+    margin-top: 410px;
+    margin-left: -300px;
+}
+
+#inscribite{
+    color: black;
+    background-color: #FAF78B;
+    border-radius: 30px;
+    border: none;
+    cursor:pointer;
+    padding: 5px 12px;
+    transition: all 0.3s ease 0s;
+    margin-left: 300px;
+}
+
+#inscribite:hover{
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+/*----------MAIN----------*/
+/*----------CONTACTO----------*/
+
+.sede1{
+    background-color: white;
+    display: flex;
+    padding: 40px;
+    width: 58%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
+}
+
+.sede2{
+    background-color: white;
+    display: flex;
+    padding: 40px;
+    width: 58%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
+}
+
+/*----------MAIN----------*/
+/*----------FORMULARIOS----------*/
+
+.formulario1{
+    background-color: white;
+    display: flex;
+    padding: 50px;
+    width: 70%;
+    max-width: 10000px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
+    margin: 15px auto;
+}
+
+/*----------FOOTER----------*/
+.encabezado{
+    grid-area: footer;
+    background-color:#4BFF38;
+    
+}
+
+.footer{
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.footer img{
+    display: inline-block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    margin-left: 1600px;
+}
+
+.footer p{
+    display: inline-block;
+    margin-left: 1650px;
+
+}
+
+/*----------CELULAR----------*/
+
+@media screen and (min-widht:768px){
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
