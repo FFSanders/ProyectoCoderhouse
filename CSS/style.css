@@ -94,7 +94,7 @@ a{
     border-radius: 50px;
     cursor:pointer
     transition: all 0.3s ease 0s;
-    margin-top: 75px;
+    margin-top: 55px;
     margin-left: -950px;
 }
 
@@ -212,7 +212,7 @@ a{
 
 .premios{
     position: relative;
-    margin-top: 200px;
+    margin-top: 250px;
     margin-right: 300px;
     width: 100%;
     padding: 0px 10px;
@@ -220,7 +220,7 @@ a{
 
 .boton{
     position: absolute;
-    margin-top: 410px;
+    margin-top: 530px;
     margin-left: -300px;
 }
 
@@ -309,4 +309,33 @@ a{
     "main"
     "footer"
     ;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 15px;
+    background-color: #4BFF38;
+}
+
+/*logo y titulo*/
+.logo{
+    display: flex;
+    display: inline-block;
+}
+
+.logo img{
+    height: 70px;
+    width: auto;
+}
+
+.logo h2{
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 2.7%;
+    left: 5.5%;
 }
