@@ -1,206 +1,119 @@
 *{
-    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    margin: 0;
+}
+/*--------------HEADER--------------*/
+header nav{
+    background-color: #4BFF38;
+} 
+
+a img{
+    height: 45px;
 }
 
-/*----------HEADER----------*/
-
-nav{
-    background: #4BFF38;
-    height: 98px;
-    width: 100%;
-}
-
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-}
-
-.logo{
-    height: 90px;
-    margin-top: -20px;
-}
-
-a p{
-    color: black;
-    text-decoration: none;
-}
-
-nav ul{
-    float: right;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: black;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-li a.active, li a:hover{
-    background: #FAF78B;
-    transition: .5s;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-section{
-    background: url(fondo.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
-}
-
-/*----------MAIN----------*/
-/*----------INICIO----------*/
-.main{
-    grid-area: main; 
+/*--------------MAIN--------------*/
+/*---INICIO---*/
+main{
+    background: url(../images/fondo.jpg) no-repeat;
     padding: 20px;
-    background-image: url(../Images/fondo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-
-/*Tarjeta de sobre nosotros*/
 .nosotros{
     background-color: white;
     display: flex;
     justify-content: space-between;
-    padding: 40px;
-    width: 58%;
+    padding: 15px;
+    width: 100%;
     border-radius: 20px;
     margin: 15px auto;
     box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
 }
 
-.nosotros:hover{
-    transform: scale(1.1);
+.nosotros img{
+    position: relative;
+    height: 290px;
+    margin-top: 380px;
+    margin-right: 30px;
 }
 
-.nosotros img{
-    width: 450px;
-    border-radius: 30px;
+.nosotros p{
+    position: absolute;
+    width: 300px;
+    margin-top: 120px;
 }
 
 .nosotros h1{
     font-size: 40px;
     margin: 0;
+    width: 20px;
     font-weight: bold;
 }
 
-.nosotros p{
-    position: absolute;
-    margin-top: 70px;
-    width: 100%;
-    max-width: 500px;
-
-}
-
-/*tarjeta de nosotros*/
 .informacion{
     background-color: white;
     display: flex;
-    padding: 40px;
-    width: 58%;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
     border-radius: 20px;
     margin: 15px auto;
     box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
 }
 
-.informacion:hover{
-    transform: scale(1.1);
-}
-
-.informacion img{
-    width: 450px;
-    border-radius: 30px;
-}
-
-.informacion h2{
-    font-size: 35px;
+.horarios h2{
+    font-size: 40px;
     margin: 0;
+    padding: 10px;
     font-weight: bold;
 }
 
-.informacion ul{
-    margin: 20px;
-    margin-top: 15px;
-}
-
-.horarios{
-    position: absolute;
-}
-.precio{
+.horarios ul li{
     position: relative;
-    margin-top: 200px;
-    margin-right: 300px;
+    padding: auto;
 }
 
-/*----------MAIN----------*/
-/*----------TORNEO----------*/
+.precio h2{
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-left: -180px;
+}
 
+.precio ul li{
+    position: relative;
+    margin-left: -200px;
+}
+
+.informacion img{
+    position: relative;
+    height: 200px;
+    margin-top: 420px;
+    margin-left: -250px;
+}
+
+/*---TORNEO---*/
 .torneo{
     background-color: white;
-    display: flex;
-    padding: 40px;
-    width: 60%;
+    padding: 15px;
+    width: 100%;
     border-radius: 20px;
     margin: 15px auto;
     box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
 }
+
 .torneo img{
-    width: 50%;
-    height: 50%;
-}
-.info{
-    position: absolute;
-    width: 100%;
-    max-width: 400px;
-    padding: 0px 10px;
-}
-
-.premios{
-    position: relative;
-    margin-top: 250px;
-    margin-right: 300px;
-    width: 100%;
-    padding: 0px 10px;
-}
-
-.boton{
-    position: absolute;
-    margin-top: 840px;
-    margin-left: -300px;
+    margin-top: -50px;
+    margin-left: 10px;
+    height: 200px;
 }
 
 #inscribite{
@@ -208,62 +121,41 @@ section{
     background-color: #FAF78B;
     border-radius: 30px;
     border: none;
-    cursor:pointer;
-    padding: 5px 12px;
-    transition: all 0.3s ease 0s;
-    margin-left: 300px;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-#inscribite:hover{
-    background-color: yellow;
-    transform: scale(1.1);
-}
-
-/*----------MAIN----------*/
-/*----------CONTACTO----------*/
-
-.sede1{
+/*---INSCRIBITE---*/
+.torneoinfo{
     background-color: white;
-    display: flex;
-    padding: 40px;
-    width: 58%;
+    padding: 15px;
+    width: 100%;
     border-radius: 20px;
+    margin: 15px auto;
     box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
 }
 
-.sede2{
-    background-color: white;
-    display: flex;
-    padding: 40px;
-    width: 58%;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
+.torneoinfo h1{
+    font-weight: bold;
 }
-
-/*----------MAIN----------*/
-/*----------FORMULARIOS----------*/
 
 .formulario1{
     background-color: white;
-    display: flex;
-    padding: 50px;
-    width: 70%;
-    max-width: 10000px;
+    padding: 15px;
+    width: 100%;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
     margin: 15px auto;
-}
+    box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
+}   
 
-/*----------FOOTER----------*/
-.encabezado{
-    grid-area: footer;
-    background-color:#4BFF38;
-    
-}
-
+/*--------------FOOTER--------------*/
 .footer{
+    background-color:#4BFF38;
     width: 100%;
     padding: 10px 0px;
+    height: 110px;
+    margin-top: auto;
 }
 
 .footer img{
@@ -271,270 +163,301 @@ section{
     position: absolute;
     width: 45px;
     height: 45px;
-    margin-left: 1600px;
+    margin-left: 240px;
 }
 
 .footer p{
-    display: inline-block;
+    padding: 5px;
+    margin-top: -25px;
+    margin-left: 280px;
+    font-size: 15px;
+}
+
+/*----------TABLET----------*/
+
+/*modo horizontal */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape)
+{
+/*---INICIO---*/
+.nosotros img{
+    position: relative;
+    height: 300px;
+    margin-top: 75px;
+    margin-right: 150px;
+}
+
+.precio h2{
+    margin-top: 200px;
+    margin-left: -490px;
+}
+
+.precio ul li{
+    margin-left: -490px;
+}
+
+.informacion img{
+    position: relative;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: -250px;
+}
+
+/*---INSCRIBITE---*/
+.torneoinfo p{
+    font-size: 18px;
+}
+
+.formulario1{
+    font-size: 20px;
+}
+
+
+/*---FOOTER---*/
+.footer img{
+    width: 45px;
+    height: 45px;
+    margin-left: 735px;
+}
+    
+.footer p{
+    padding: 5px;
+    margin-top: -15px;
+    margin-left: 780px;
+    font-size: 15px;
+}
+}
+
+/*modo vertical */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+{
+/*---INICIO---*/
+.nosotros img{
+    position: relative;
+    height: 250px;
+    margin-top: 100px;
+    margin-right: 80px;
+}
+
+.precio h2{
+    margin-top: 200px;
+    margin-left: -345px;
+    font-size: 25px;
+}
+
+.precio ul li{
+    margin-left: -345px;
+}
+
+.informacion img{
+    position: relative;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: -150px;
+}
+
+/*---TORNEO---*/
+.torneo h1{
+    font-size: 40px;
+}
+.torneo p{
+    font-size: 25px;
+}
+
+.premios li{
+    font-size: 20px;
+}
+
+.torneo h2{
+    font-size: 40px;
+}
+
+.torneo img{
+    margin-top: -50px;
+    margin-left: 10px;
+    height: 200px;
+}
+
+#inscribite{
+    color: black;
+    background-color: #FAF78B;
+    border-radius: 30px;
+    border: none;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*---INSCRIBITE*/
+.torneoinfo h1{
+    font-size: 35px;
+}
+
+.torneoinfo p{
+    font-size: 25px;
+}
+
+.formulario1{
+    font-size: 35px;
+}
+
+/*---TORNEO---*/
+.torneo img{
+    margin-top: -50px;
+    margin-left: 10px;
+    height: 200px;
+}
+
+#inscribite{
+    color: black;
+    background-color: #FAF78B;
+    border-radius: 30px;
+    border: none;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*---FOOTER---*/
+.footer img{
+    width: 45px;
+    height: 45px;
+    margin-left: 505px;
+}
+    
+.footer p{
+    padding: 5px;
+    margin-top: -15px;
+    margin-left: 550px;
+}
+}
+
+/*----------ESCRITORIO----------*/
+
+@media only screen
+and (min-width: 1025px)
+and (max-width: 2000px)
+{
+    /*---HEADER---*/
+
+header li a:hover{
+    background: #FAF78B;
+    transition: .5s;
+}
+
+header a img:hover{
+    transform: scale(1.3);
+}
+.navbar-nav{
+    position: absolute;
+    padding: 0px 580px;
+}
+
+    /*---INICIO---*/
+.nosotros{
+    display: flex;
+    padding: 15px;
+    width: 50%;
+    border-radius: 20px;
+    margin: 15px auto;
+}
+
+.nosotros:hover{
+    transform: scale(1.1);
+}
+
+.nosotros img{
+    height: 450px;
+    margin-top: 70px;
+    margin-right: 100px;
+}
+
+.informacion{
+    width: 50%;
+}
+
+.precio h2{
+    margin-top: 200px;
+    margin-left: -440px;
+}
+
+.precio ul li{
+    margin-left: -440px;
+}
+
+.informacion img{
+    position: relative;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: -150px;
+}
+
+.informacion:hover{
+    transform: scale(1.1);
+}
+
+/*---TORNEO---*/
+.torneo{
+    width: 60%;
+}
+
+.torneo p{
+    font-size: 20px;
+}
+
+.premios h2{
+    font-size: 40px;
+}
+.premios li{
+    font-size: 20px;
+}
+
+.torneo img{
+    margin-left: 270px;
+    margin-top: -20px;
+    height: 300px;
+}
+
+#inscribite{
+    margin-left: 400px;
+    font-size: 18px;
+}
+
+#inscribite:hover{
+    background-color: yellow;
+}
+
+/*---INSCRIBITE---*/
+.torneoinfo {
+    width: 50%;
+}
+
+.torneoinfo p{
+    font-size: 30px;
+}
+
+.formulario1{
+    font-size: 20px;
+    width: 40%;
+}
+
+.formulario1 h2{
+    font-size: 50px;
+}
+/*---FOOTER---*/
+.footer img{
+    width: 45px;
+    height: 45px;
+    margin-left: 1600px;
+}
+    
+.footer p{
+    padding: 5px;
+    margin-top: -15px;
     margin-left: 1650px;
-
 }
-
-/*----------TABLET  ----------*/
-
-/*HEADER*/
-@media (max-width: 992px){
-    .enlace{
-        padding-left: 20px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-    /*main*/
-    
-    .main{
-        display: block;
-    }
-    /*nosotros*/
-    .nosotros{
-        padding: 10px;
-        width: auto;
-    }
-
-    .nosotros img{
-        position: absolute;
-        width: 85%;
-        margin-top: 280px;
-        margin-right: 20px;
-    }
-
-    .nosotros p{
-        width: 350px;
-    }
-
-    .nosotros:hover{
-        transform: none;
-    }
-
-    .informacion{
-        width: auto;
-        padding: 10px;
-    }
-
-    .informacion:hover{
-        transform: none;
-    }
-    
-    .informacion p{
-        width: 280px;
-    }
-
-    .informacion img{
-        position: absolute;
-        width: 85%;
-        margin-top: 280px;
-        margin-right: 20px;
-    }
-    
-    .informacion h2{
-        font-size: 20px;
-        margin: 0;
-        font-weight: bold;
-    }
-    
-    .informacion ul{
-        margin: 10px;
-        margin-top: 15px;
-    }
-
-    .horarios{
-        width: 80px;
-    }
-
-    .precios{
-        width: 80px;
-    }
-/*tornep*/
-    .torneo{
-        display: flex;
-        padding: 40px;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px auto;
-        box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
-    }
-    
-    .info{
-        position: absolute;
-        width: 100%;
-        max-width: 350px;
-        padding: 0px 10px;
-    }
-    
-    .premios{
-        position: relative;
-        margin-top: 250px;
-        margin-right: 250px;
-        width: auto;
-        font-size: 20px;
-        padding: 0px 10px;
-    }
-
-    .boton{
-        position: absolute;
-        margin-top: 830px;
-        margin-left: -200px;
-    }
-
-    .torneo img{
-        position: absolute;
-        width: 50%;
-        height: 30%;
-        margin-top: 500px;
-        margin-left: 70px;
-    }
-/*footer*/
-    .footer p{
-        margin-left: 10px;
-    }
-
-    .footer img{
-        margin-left: 190px;
-        margin-top: -60px;
-    }
 }
-
-/*----------CELULAR----------*/
-
-/*HEADER*/
-@media (max-width: 768px){
-    .checkbtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -120%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    li a:hover, li a.active{
-        background: none;
-        color: red;
-    }
-    #check:checked ~ ul{
-        left:0;
-    }
-
-
-/*main*/
-    
-    .main{
-        display: block;
-    }
-/*sobre nosotros*/
-    .nosotros{
-        padding: 10px;
-        width: auto;
-    }
-
-    .nosotros img{
-        position: absolute;
-        width: 85%;
-        margin-top: 280px;
-        margin-right: 20px;
-    }
-
-    .nosotros p{
-        width: 350px;
-    }
-
-    .nosotros:hover{
-        transform: none;
-    }
-
-    .informacion{
-        width: auto;
-        padding: 10px;
-    }
-
-    .informacion:hover{
-        transform: none;
-    }
-    
-    .informacion p{
-        width: 280px;
-    }
-
-    .informacion img{
-        position: absolute;
-        width: 85%;
-        margin-top: 280px;
-        margin-right: 20px;
-    }
-    
-/*torneo*/
-    .torneo{
-        display: flex;
-        padding: 40px;
-        width: 100%;
-        border-radius: 20px;
-        margin: 10px auto;
-        box-shadow: 10px 10px 10px  rgb(0,0,0, .5);
-    }
-    
-    .info{
-        position: absolute;
-        width: 100%;
-        max-width: 350px;
-        padding: 0px 10px;
-    }
-    
-    .premios{
-        position: relative;
-        margin-top: 250px;
-        margin-right: 250px;
-        width: auto;
-        font-size: 10px;
-        padding: 0px 10px;
-    }
-
-    .boton{
-        position: absolute;
-        margin-top: 820px;
-        margin-left: -200px;
-    }
-
-    .torneo img{
-        position: absolute;
-        width: 50%;
-        height: 20%;
-        margin-top: 600px;
-        margin-left: 70px;
-    }
-
-/*footer*/
-    .footer p{
-        margin-left: 10px;
-    }
-
-    .footer img{
-        margin-left: 190px;
-        margin-top: -60px;
-    }
-
-
-}
-
-

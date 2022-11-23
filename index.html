@@ -3,45 +3,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/soccer-ball.png" type="image/x-icon">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Hora pico</title>
 </head>
 <body>
-    <div class="contenedor">
-        <header>
-            <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <a href="index.html" class="enlace">
-                    <img src="./Images/logo.png" class="logo">
-                </a>
-                <ul>
-                    <li><a class="active" href="./index.html">Inicio</a></li>
-                    <li><a href="./Pages/torneo.html">Torneo</a></li>
-                    <li><a href="./Pages/sedes.html">Sedes</a></li>
-                    <li><a href="./Pages/contacto.html">Contacto</a></li>
-                    <li><a href="./Pages/cumpleaños.html">Festeja tu cumpleaños!</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <div class="main">
-                <br>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./images/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/torneo.html">Torneo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sedes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Festeja tu cumpleaños!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        
+        <main class="main">
             <section class="nosotros">
                 <h1>Sobre nosotros</h1>
                 <p>Hora pico cuenta con dos sedes, una en florencio varela y la otra en Berazategui. Ambas sedes cuentan con tres canchas de futbol 5, 
                 dos canchas de futbol 7 y una cancha de futbol 9. Todas nuestras canchas cuentan con césped sintético y una excelente iluminacóión, 
                 vestuarios, bufet con wi-fi y estacionamiento gratuito. Organizamos torneos de futbol 7 con premios</p>
-                <img src="./Images/foto1.jpg" id="img" height="500">
-            </section>
+                <img src="./Images/foto1.jpg" id="img">
+            </section>  
             <section class="informacion">
                 <div class="horarios">
                     <h2>Horarios:</h2>
@@ -63,25 +69,21 @@
                 <img src="./Images/foto2.jfif" id="img2" height="500">
             </section>
         </main>
-        </div>
 
-        <div class="encabezado">
-            <footer class="footer">
-                <nav>
-                    <a href="index.html">Inicio |</a>
-                    <a href="./Pages/sedes.html">Sedes |</a>
-                    <a href="./Pages/contacto.html">Contacto </a>
-                </nav>
-                <img src="./Images/whatsapp.png" height="50">
-                <div class="numeros">
-                    <p>11 20215544 (Florencio Varela)</p>
-                    <p>11 40209853 (Berazategui)</p>
-                </div>
-            </footer>
-        </div>
+        <footer class="footer">
+            <nav>
+                <a href="index.html">Inicio |</a>
+                <a href="#">Sedes |</a>
+                <a href="#">Contacto </a>
+            </nav>
+            <img src="./Images/whatsapp.png" height="50">
+            <div class="numeros">
+                <p>11 20215544 (Florencio Varela)</p>
+                <p>11 40209853 (Berazategui)</p>
+            </div>
+        </footer>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
-
 </html>
