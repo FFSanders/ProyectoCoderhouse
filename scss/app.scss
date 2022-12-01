@@ -1,0 +1,16 @@
+//Base
+@import './base/color.scss';
+@import './base/reset.scss';
+@import './base/typography.scss';
+
+//Layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/forms.scss';
+
+//Components
+@import './components/card.scss';
+
+//Views
+
+@import './views/index.scss'
